@@ -21,7 +21,7 @@ get_pls_mat = function(data, nbasis, rangeval){
   bs_basis = create.bspline.basis(rangeval, nbasis = nbasis)
   evalbase = eval.basis(grid_points, bs_basis)
   innp_mat = inprod(bs_basis, bs_basis)
-  sqrt_innp_mat = sqrtm(innp_mat)$B
+  sqrt_innp_mat = sqrtm(innp_mat)
   fdobj = fdPar(bs_basis, int2Lfd(2), lambda=0)
   pcaobj = smooth.basisPar(grid_points, t(data), bs_basis, Lfdobj=NULL, lambda=0)$fd
   data_mat = t(pcaobj$coefs) %*% sqrt_innp_mat
