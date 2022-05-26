@@ -1,4 +1,4 @@
-This repo includes an example R code used in Monte-Carlo experiments of the paper "On partial least squares estimation inscalar-on-function regression models"
+This repo includes an example R code used in Monte-Carlo experiments of the paper "On partial least squares estimation in scalar-on-function regression models"
 # Authors
 Semanur Saricam, Ufuk Beyaztas, Baris Asikgil, Han Lin Shang
 # Procedure
